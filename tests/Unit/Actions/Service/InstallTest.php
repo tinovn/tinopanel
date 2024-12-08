@@ -18,7 +18,7 @@ class InstallTest extends TestCase
     {
         SSH::fake('Active: active');
         Http::fake([
-            'https://api.github.com/repos/tinovn/tinopanel/agent/tags' => Http::response([['name' => '0.1.0']]),
+            'https://api.github.com/repos/tinovn/agent/tags' => Http::response([['name' => '0.1.0']]),
         ]);
 
         $service = app(Install::class)->install($this->server, [
@@ -43,7 +43,7 @@ class InstallTest extends TestCase
         $this->expectExceptionMessage('Failed to fetch tags');
         SSH::fake('Active: inactive');
         Http::fake([
-            'https://api.github.com/repos/tinovn/tinopanel/agent/tags' => Http::response([]),
+            'https://api.github.com/repos/tinovn/agent/tags' => Http::response([]),
         ]);
         app(Install::class)->install($this->server, [
             'type' => 'monitoring',

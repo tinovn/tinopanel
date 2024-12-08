@@ -39,7 +39,7 @@ class Index extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinovn/tinopanel.com/sites/ssl.html')
+                ->url('https://panel.tino.vn/sites/ssl.html')
                 ->openUrlInNewTab(),
             CreateAction::make('create')
                 ->label('New Certificate')

@@ -2,7 +2,7 @@
 
 INIT_FLAG="/var/www/html/storage/.INIT_ENV"
 NAME=${NAME:-"tino"}
-EMAIL=${EMAIL:-"tino@tinovn/tinopanel.com"}
+EMAIL=${EMAIL:-"support@tino.vn"}
 PASSWORD=${PASSWORD:-"password"}
 
 # Function to check if a string is 32 characters long

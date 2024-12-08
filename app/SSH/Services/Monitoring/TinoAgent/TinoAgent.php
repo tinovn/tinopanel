@@ -14,9 +14,9 @@ class TinoAgent extends AbstractService
 {
     use HasScripts;
 
-    const TAGS_URL = 'https://api.github.com/repos/tinovn/tinopanel/agent/tags';
+    const TAGS_URL = 'https://api.github.com/repos/tinovn/agent/tags';
 
-    const DOWNLOAD_URL = 'https://github.com/tinovn/tinopanel/agent/releases/download/%s';
+    const DOWNLOAD_URL = 'https://github.com/tinovn/agent/releases/download/%s';
 
     public function creationRules(array $input): array
     {

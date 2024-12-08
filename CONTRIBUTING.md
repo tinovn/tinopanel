@@ -2,4 +2,4 @@
 
 Please read the contribution guide on the website
 
-https://tinovn/tinopanel.com/introduction/contribution-guide.html
+https://panel.tino.vn/introduction/contribution-guide.html
