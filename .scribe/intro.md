@@ -1,6 +1,6 @@
 # Introduction
 
-TinoDeploy's API documentation.
+TinoPanel's API documentation.
 
 <aside>
     <strong>Base URL</strong>: <code>https://your-tino-url</code>

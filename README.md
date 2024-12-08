@@ -1,8 +1,8 @@
 
 <p align="center">
-    <img src="https://github.com/tinodeploy/tino/assets/61919774/8060fded-58e3-4d58-b58b-5b717b0718e9" alt="TinoDeploy>
+    <img src="https://github.com/tinovn/tinopanel/tino/assets/61919774/8060fded-58e3-4d58-b58b-5b717b0718e9" alt="TinoPanel>
     <p align="center">
-        <a href="https://github.com/tinodeploy/tino/actions"><img alt="GitHub Workflow Status" src="https://github.com/tinodeploy/tino/workflows/tests/badge.svg"></a>
+        <a href="https://github.com/tinovn/tinopanel/tino/actions"><img alt="GitHub Workflow Status" src="https://github.com/tinovn/tinopanel/tino/workflows/tests/badge.svg"></a>
     </p>
 </p>
 
@@ -14,7 +14,7 @@ Tino is a self-hosted web application that helps you manage your servers and dep
 ## Quick Start
 
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/tinodeploy/tino/1.x/scripts/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/tinovn/tinopanel/tino/1.x/scripts/install.sh)
 ```
 
 ## Features
@@ -31,10 +31,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/tinodeploy/tino/1.x/scripts/in
 
 ## Useful Links
 
-- [Documentation](https://tinodeploy.com)
-- [Install on Server](https://tinodeploy.com/introduction/installation.html#install-on-vps-recommended)
-- [Install via Docker](https://tinodeploy.com/introduction/installation.html#install-via-docker)
-- [Roadmap](https://github.com/orgs/tinodeploy/projects/5)
+- [Documentation](https://tinovn/tinopanel.com)
+- [Install on Server](https://tinovn/tinopanel.com/introduction/installation.html#install-on-vps-recommended)
+- [Install via Docker](https://tinovn/tinopanel.com/introduction/installation.html#install-via-docker)
+- [Roadmap](https://github.com/orgs/tinovn/tinopanel/projects/5)
 - [Video Demo](https://youtu.be/AbmUOBDOc28)
 - [Discord](https://discord.gg/uZeeHZZnm5)
 - [Contribution](/CONTRIBUTING.md)

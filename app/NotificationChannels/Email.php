@@ -39,8 +39,8 @@ class Email extends AbstractNotificationChannel
         try {
             Mail::to($this->data()['email'])->send(
                 new NotificationMail(
-                    'Connected to TinoDeploy',
-                    'This email confirms that you have connected your email to TinoDeploy.'
+                    'Connected to TinoPanel',
+                    'This email confirms that you have connected your email to TinoPanel.'
                 )
             );
         } catch (Throwable) {

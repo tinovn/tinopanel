@@ -128,7 +128,7 @@ class SSH
 
                 $this->log?->write($output);
 
-                if ($this->connection->getExitStatus() !== 0 || Str::contains($output, 'VITO_SSH_ERROR')) {
+                if ($this->connection->getExitStatus() !== 0 || Str::contains($output, 'TINO_SSH_ERROR')) {
                     throw new SSHCommandError(
                         message: 'SSH command failed with an error',
                         log: $this->log

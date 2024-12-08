@@ -27,7 +27,7 @@ jobs:
         run: |
           docker buildx build . \
             -f docker/Dockerfile \
-            -t tinodeploy/tino:${{ github.event.release.tag_name }} \
+            -t tinovn/tinopanel/tino:${{ github.event.release.tag_name }} \
             --build-arg="RELEASE=0" \
             --platform linux/amd64,linux/arm64 \
             --no-cache \
@@ -38,7 +38,7 @@ jobs:
         run: |
           docker buildx build . \
             -f docker/Dockerfile \
-            -t tinodeploy/tino:latest \
+            -t tinovn/tinopanel/tino:latest \
             --build-arg="RELEASE=0" \
             --platform linux/amd64,linux/arm64 \
             --push

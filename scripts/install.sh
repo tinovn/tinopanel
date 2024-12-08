@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export VITO_VERSION="1.x"
+export TINO_VERSION="1.x"
 export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 
@@ -106,7 +106,7 @@ php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 # setup website
 export COMPOSER_ALLOW_SUPERUSER=1
-export V_REPO="https://github.com/tinodeploy/tino.git"
+export V_REPO="https://github.com/tinovn/tinopanel/tino.git"
 export V_VHOST_CONFIG="
 server {
     listen 80;
@@ -153,12 +153,12 @@ ln -s /etc/nginx/sites-available/tino /etc/nginx/sites-enabled/
 service nginx restart
 rm -rf /home/${V_USERNAME}/tino
 git config --global core.fileMode false
-git clone -b ${VITO_VERSION} ${V_REPO} /home/${V_USERNAME}/tino
+git clone -b ${TINO_VERSION} ${V_REPO} /home/${V_USERNAME}/tino
 find /home/${V_USERNAME}/tino -type d -exec chmod 755 {} \;
 find /home/${V_USERNAME}/tino -type f -exec chmod 644 {} \;
 cd /home/${V_USERNAME}/tino && git config core.fileMode false
 cd /home/${V_USERNAME}/tino
-git checkout $(git tag -l --merged ${VITO_VERSION} --sort=-v:refname | head -n 1)
+git checkout $(git tag -l --merged ${TINO_VERSION} --sort=-v:refname | head -n 1)
 composer install --no-dev
 cp .env.prod .env
 touch /home/${V_USERNAME}/tino/storage/database.sqlite

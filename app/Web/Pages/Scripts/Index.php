@@ -45,7 +45,7 @@ class Index extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/other/scripts.html')
+                ->url('https://tinovn/tinopanel.com/other/scripts.html')
                 ->openUrlInNewTab(),
             Action::make('create')
                 ->label('Create a Script')

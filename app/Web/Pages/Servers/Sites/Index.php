@@ -45,7 +45,7 @@ class Index extends \App\Web\Pages\Servers\Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/sites/create-site.html')
+                ->url('https://tinovn/tinopanel.com/sites/create-site.html')
                 ->openUrlInNewTab(),
             Action::make('create')
                 ->label('Create a Site')

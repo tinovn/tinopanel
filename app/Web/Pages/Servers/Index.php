@@ -57,7 +57,7 @@ class Index extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/servers/create-server.html')
+                ->url('https://tinovn/tinopanel.com/servers/create-server.html')
                 ->openUrlInNewTab(),
             \Filament\Actions\Action::make('create')
                 ->label('Create a Server')

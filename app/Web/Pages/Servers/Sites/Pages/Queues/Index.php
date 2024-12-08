@@ -38,7 +38,7 @@ class Index extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/sites/queues.html')
+                ->url('https://tinovn/tinopanel.com/sites/queues.html')
                 ->openUrlInNewTab(),
             CreateAction::make('create')
                 ->icon('heroicon-o-plus')

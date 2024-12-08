@@ -7,7 +7,7 @@ return [
     'title' => 'API Documentation',
 
     // A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
-    'description' => 'TinoDeploy\'s API documentation.',
+    'description' => 'TinoPanel\'s API documentation.',
 
     // The base URL displayed in the docs. If this is empty, Scribe will use the value of config('app.url') at generation time.
     // If you're using `laravel` type, you can set this to a dynamic string, like '{{ config("app.tenant_url") }}' to get a dynamic base URL.

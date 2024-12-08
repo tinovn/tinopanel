@@ -38,7 +38,7 @@ class Index extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/servers/cronjobs.html')
+                ->url('https://tinovn/tinopanel.com/servers/cronjobs.html')
                 ->openUrlInNewTab(),
             Action::make('create')
                 ->authorize(fn () => auth()->user()?->can('create', [CronJob::class, $this->server]))
@@ -48,7 +48,7 @@ class Index extends Page
                     TextInput::make('command')
                         ->rules(fn (callable $get) => CreateCronJob::rules($get())['command'])
                         ->helperText(fn () => view('components.link', [
-                            'href' => 'https://tinodeploy.com/servers/cronjobs.html',
+                            'href' => 'https://tinovn/tinopanel.com/servers/cronjobs.html',
                             'external' => true,
                             'text' => 'How the command should look like?',
                         ])),

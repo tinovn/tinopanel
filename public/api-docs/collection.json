@@ -11,7 +11,7 @@
     "info": {
         "name": "API Documentation",
         "_postman_id": "a41cda01-38ef-4ec3-8538-037284060387",
-        "description": "TinoDeploy's API documentation.",
+        "description": "TinoPanel's API documentation.",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [

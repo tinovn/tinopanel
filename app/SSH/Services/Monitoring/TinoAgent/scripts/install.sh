@@ -19,7 +19,7 @@ chmod +x ./$executable
 sudo mv ./$executable /usr/local/bin/tino-agent
 
 # create service
-export VITO_AGENT_SERVICE="
+export TINO_AGENT_SERVICE="
 [Unit]
 Description=Tino Agent
 After=network.target
@@ -33,18 +33,18 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 "
-echo "${VITO_AGENT_SERVICE}" | sudo tee /etc/systemd/system/tino-agent.service
+echo "${TINO_AGENT_SERVICE}" | sudo tee /etc/systemd/system/tino-agent.service
 
 sudo mkdir -p /etc/tino-agent
 
-export VITO_AGENT_CONFIG="
+export TINO_AGENT_CONFIG="
 {
     \"url\": \"__config_url__\",
     \"secret\": \"__config_secret__\"
 }
 "
 
-echo "${VITO_AGENT_CONFIG}" | sudo tee /etc/tino-agent/config.json
+echo "${TINO_AGENT_CONFIG}" | sudo tee /etc/tino-agent/config.json
 
 sudo systemctl daemon-reload
 sudo systemctl enable tino-agent

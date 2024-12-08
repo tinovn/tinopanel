@@ -82,7 +82,7 @@ class View extends Page
                 ->label('Read the Docs')
                 ->icon('heroicon-o-document-text')
                 ->color('gray')
-                ->url('https://tinodeploy.com/sites/application.html')
+                ->url('https://tinovn/tinopanel.com/sites/application.html')
                 ->openUrlInNewTab(),
         ];
         $actionsGroup = [];
